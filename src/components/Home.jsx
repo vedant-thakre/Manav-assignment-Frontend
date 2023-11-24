@@ -19,7 +19,6 @@ const Home = () => {
         try {
             const response = await axios("https://api.quotable.io/random");
             const { content, author } = response.data;
-            console.log(response.data);
             setQuote({
                 text: content,
                 author: author,
